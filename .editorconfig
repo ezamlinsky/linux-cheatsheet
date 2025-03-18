@@ -1,0 +1,37 @@
+################################################################################
+# Encoding: UTF-8                                                  Tab size: 4 #
+#                                                                              #
+#                 EDITOR CONFIGURATION FILE FOR DIFFERENT IDE                  #
+#                                                                              #
+# Ordnung muss sein!                           Copyleft (Ɔ) 2025, Gentoo Linux #
+################################################################################
+
+# Top-most configuration file
+	root = true
+
+#******************************************************************************#
+#       Settings to apply to every file                                        #
+#******************************************************************************#
+[*]
+
+# Line ending file format
+	end_of_line					= lf
+
+# File character encoding
+	charset						= utf-8
+
+# Width of a single tabstop character
+	tab_width					= 4
+
+# Indentation settings
+	indent_style				= tab
+	indent_size					= 4
+
+# Misc editor settings
+	insert_final_newline		= true
+	trim_trailing_whitespace	= true
+	max_line_length				= 80
+
+################################################################################
+#                                 END OF FILE                                  #
+################################################################################
