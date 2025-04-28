@@ -7,9 +7,9 @@
 
 ## Скрипты на BASH
    * [Специальные символы в BASH](bash/special-symbols.md)
-   * [Встроенные операции BASH](#встроенные-операции-bash)
-   * [Встроенные команды BASH](#встроенные-команды-bash)
-   * [Встроенные переменные BASH](#встроенные-переменные bash)
-   * [Переменные в BASH](#переменные-в-bash)
-   * [Условные выражения в BASH](#условные-выражения-в-bash)
-   * [Работа со строками в BASH](#работа-со-строками-в-bash)
+   * [Встроенные операции BASH](bash/operations.md)
+   * [Встроенные команды BASH](bash/builtins.md)
+   * [Встроенные переменные BASH](bash/shell-variables.md)
+   * [Переменные в BASH](bash/variables.md)
+   * [Условные выражения в BASH](bash/conditional-expressions.md)
+   * [Работа со строками в BASH](bash/string-operations.md)
