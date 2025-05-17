@@ -1,0 +1,42 @@
+# Управление системой и менеджером служб
+## Анализ состояния системы
+<pre>
+<b>systemctl status</b>                Показывает состояние системы
+<b>systemctl list-units</b>            Показывает список запущенных юнитов
+<b>systemctl --failed</b>              Показывает список юнитов запустить которые не удалось
+<b>systemctl list-unit-files</b>       Показывает список установленных файлов юнитов
+<b>systemctl status &lt;pid&gt;</b>          Показывает информацию о процессе по его PID
+</pre>
+## Обновление конфигурации системы
+<pre>
+<b>systemctl daemon-reload</b>         Перезагружает настройки systemd
+</pre>
+## Состояние юнита
+<pre>
+<b>systemctl help &lt;unit&gt;</b>           Показывает страницу руководства юнита
+<b>systemctl status &lt;unit&gt;</b>         Показывает состояние юнита
+<b>systemctl is-enabled &lt;unit&gt;</b>     Проверяет добавлен ли юнит в автозапуск
+</pre>
+## Управление юнитом
+### Активация
+<pre>
+<b>systemctl enable &lt;unit&gt;</b>         Включает юнит и добавляет его в автозапуск
+<b>systemctl enable --now &lt;unit&gt;</b>   Включает юнит и сразу запускает его
+<b>systemctl disable &lt;unit&gt;</b>        Отключает запуск юнита при загрузке системы
+<b>systemctl reenable &lt;unit&gt;</b>       Включает юнит заново
+</pre>
+### Запуск и остановка
+<pre>
+<b>systemctl start &lt;unit&gt;</b>          Незамедлительно запускает юнит
+<b>systemctl stop &lt;unit&gt;</b>           Незамедлительно останавливает юнит
+<b>systemctl restart &lt;unit&gt;</b>        Перезапускает юнит
+</pre>
+### Маскировка юнита
+<pre>
+<b>systemctl mask &lt;unit&gt;</b>           Замаскировывает юнит, сделав невозможным его запуск
+<b>systemctl unmask &lt;unit&gt;</b>         Снимает маскировку юнита
+</pre>
+### Обновление конфигурации
+<pre>
+<b>systemctl reload &lt;unit&gt;</b>         Перезагружает юнит с новыми настройками
+</pre>
