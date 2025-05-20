@@ -104,12 +104,12 @@
 #### Получение ключей
 <pre>
 <b>gpg --fetch-keys &lt;URIs&gt;</b>         Получает ключи с указанных URI (например, HTTP, FTP, LDAP)
-<b>gpg --receive-keys &lt;keys&gt;</b>       Получает ключи с сервера ключей
+<b>gpg --receive-keys &lt;names&gt;</b>      Получает ключи с сервера ключей
 <b>gpg --refresh-keys</b>              Обновляет ключи с сервера ключей (подписи, UID и т.д.)
 </pre>
 #### Отправка ключей
 <pre>
-<b>gpg --send-keys &lt;keys&gt;</b>          Отправляет ключи на сервер ключей
+<b>gpg --send-keys &lt;names&gt;</b>         Отправляет ключи на сервер ключей
 </pre>
 #### Поиск ключей
 <pre>
