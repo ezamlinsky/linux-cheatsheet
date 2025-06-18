@@ -197,6 +197,18 @@
 <b>git branch --no-merged</b>          Показывает ветки которые ещё не слиты в текущую ветку
 </pre>
 ### Создание веток
+<pre>
+<b>git branch &lt;branch&gt;</b>             Создаёт новую ветку из текущей но не переключает на неё
+<b>git branch &lt;branch&gt; &lt;old&gt;</b>       Создаёт новую ветку из старой ветки но не переключает на неё
+<b>git branch &lt;branch&gt; &lt;commit&gt;</b>    Создаёт новую ветку из указанного комита но не переключает на неё
+<b>git branch -u &lt;rbranch&gt;</b>         Настраивает текущую ветку на слежение за удалённой веткой
+<b>git branch --move &lt;old&gt; &lt;new&gt;</b>   Изменяет название ветки (локально)
+<b>git switch -c &lt;branch&gt;</b>          Создает новую ветку и переключает на неё
+<b>git checkout -b &lt;branch&gt;</b>        Создаёт новую ветку и сразу переключает на нее
+<b>git checkout -b &lt;branch&gt; &lt;rmt&gt;</b>  Создаёт новую ветку из удаленной ветки и переключает на нее
+<b>git checkout -B &lt;branch&gt; &lt;com&gt;</b>  Создаёт новую ветку на указанном комите и переключает на нее
+<b>git checkout --track &lt;rbranch&gt;</b>  Создаёт новую ветку из указанной удаленной ветки и отслеживает её
+</pre>
 ### Удаление веток
 <pre>
 <b>git branch -d &lt;branch&gt;</b>          Удаляет выбранную ветку
